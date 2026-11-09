@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Aurelia Foundation — Design Tokens & CSS Variables
+   Approved Palette: Ocean Blue & Coral
+   Tokens:
+     - Ocean Navy: #173B4D (Primary text, dark hero/testimonial backgrounds)
+     - Coral:      #F07859 (Calls to action, prominent highlights, progress fills)
+     - Warm Ivory: #F5F1E8 (Warm neutral surfaces & canvas)
+     - Mist Blue:  #D7E6E7 (Supporting sections, contrasting bands, cards)
+     - Warm Gold:  #E7B85B (Accent highlights, star ratings, badges)
+   ========================================================================== */
+
+:root {
+  /* Brand Tokens: Aurelia Foundation */
+  --af-navy: #173B4D;
+  --af-navy-dark: #0E2531;
+  --af-navy-soft: #234E64;
+  --af-coral: #F07859;
+  --af-coral-hover: #D96245;
+  --af-coral-light: #FCECE8;
+  --af-ivory: #F5F1E8;
+  --af-ivory-warm: #EFE9DC;
+  --af-mist: #D7E6E7;
+  --af-mist-soft: #EBF3F4;
+  --af-gold: #E7B85B;
+  --af-gold-deep: #C99636;
+  --af-white: #FFFFFF;
+  --af-line: #CCD9DE;
+  --af-muted: #567280;
+
+  /* Hopewell Variant 2 Backward-Compatibility Mappings */
+  --hj-ink: var(--af-navy);
+  --hj-ink-soft: var(--af-navy-soft);
+  --hj-canvas: var(--af-ivory);
+  --hj-canvas-raised: #FFFFFF;
+  --hj-gold: var(--af-gold);
+  --hj-gold-deep: var(--af-gold-deep);
+  --hj-stamp: var(--af-coral);
+  --hj-line: var(--af-line);
+  --hj-muted: var(--af-muted);
+
+  /* Corner Radii */
+  --hj-radius-card: 14px;
+  --hj-radius-sm: 8px;
+  --hj-radius-pill: 100px;
+
+  /* Elevation & Shadows */
+  --hj-shadow: 0 18px 44px -20px rgba(23, 59, 77, 0.28);
+  --hj-shadow-card: 0 8px 24px -12px rgba(23, 59, 77, 0.16);
+  --hj-shadow-sm: 0 4px 12px -6px rgba(23, 59, 77, 0.10);
+
+  /* Typography Font Families */
+  --hj-font-display: var(--font-display, 'Fraunces', serif);
+  --hj-font-body: var(--font-body, 'Inter', sans-serif);
+  --hj-font-mono: var(--font-mono, 'Space Mono', monospace);
+
+  /* Animation Timings */
+  --hj-transition-fast: 0.18s ease;
+  --hj-transition-base: 0.28s ease;
+  --hj-transition-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Mixed Editorial Rhythm Utility Classes */
+.af-bg-navy {
+  background-color: var(--af-navy) !important;
+  color: #FFFFFF !important;
+}
+
+.af-bg-mist {
+  background-color: var(--af-mist) !important;
+  color: var(--af-navy) !important;
+}
+
+.af-bg-ivory {
+  background-color: var(--af-ivory) !important;
+  color: var(--af-navy) !important;
+}
+
+.af-bg-white {
+  background-color: #FFFFFF !important;
+  color: var(--af-navy) !important;
+}
+
+.af-text-coral {
+  color: var(--af-coral) !important;
+}
+
+.af-text-gold {
+  color: var(--af-gold) !important;
+}
+
+.af-text-navy {
+  color: var(--af-navy) !important;
+}
+
+.af-btn-coral {
+  background-color: var(--af-coral) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--af-coral) !important;
+  box-shadow: 0 4px 14px rgba(240, 120, 89, 0.35);
+  transition: all 0.25s ease;
+}
+
+.af-btn-coral:hover {
+  background-color: var(--af-coral-hover) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(240, 120, 89, 0.45);
+}
+
+.af-btn-navy {
+  background-color: var(--af-navy) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--af-navy) !important;
+  transition: all 0.25s ease;
+}
+
+.af-btn-navy:hover {
+  background-color: var(--af-navy-dark) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+.af-badge-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--af-coral-light);
+  color: var(--af-coral);
+  border: 1px dashed var(--af-coral);
+  padding: 4px 10px;
+  font-family: var(--hj-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  border-radius: var(--hj-radius-pill);
+}
+
+.af-badge-category {
+  display: inline-block;
+  background-color: var(--af-mist-soft);
+  color: var(--af-navy);
+  font-family: var(--hj-font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--hj-radius-pill);
+  border: 1px solid var(--af-line);
+}
+
+/* Mixed Full-Width Editorial Layout Extensions */
+.af-hero-wide {
+  position: relative;
+  padding: 76px 0 54px;
+  background: radial-gradient(circle at 88% 20%, rgba(215, 230, 231, 0.55) 0%, rgba(245, 241, 232, 0.95) 65%);
+  border-bottom: 1px solid var(--af-line);
+}
+
+.af-impact-strip {
+  background: var(--af-mist);
+  border-top: 1px solid var(--af-line);
+  border-bottom: 1px solid var(--af-line);
+  padding: 40px 0;
+}
+
+.af-how-band {
+  background: var(--af-mist);
+  border-top: 1px solid var(--af-line);
+  border-bottom: 1px solid var(--af-line);
+}
+
+.af-causes-surface {
+  background: #FFFFFF;
+  border-top: 1px solid var(--af-line);
+  border-bottom: 1px solid var(--af-line);
+}
+
+.af-contact-surface {
+  background: var(--af-mist-soft);
+  border-top: 1px solid var(--af-line);
+}
+
