@@ -1,0 +1,25 @@
+FONT LICENSING INFORMATION
+
+All fonts included in this directory are distributed under the SIL Open Font License, Version 1.1 (OFL-1.1).
+They are 100% free and open-source for personal, educational, and commercial software use.
+
+1. Fraunces
+   - Typeface Designers: Phaedra Charles, Flavia Zimbardi (Undercase Type)
+   - Repository: https://github.com/undercasetype/Fraunces
+   - License: SIL Open Font License, Version 1.1
+   - File: fraunces-latin-wght-normal.woff2 (Variable font, Latin subset, weights 100-900, optical size 9-144)
+
+2. Inter
+   - Typeface Designer: Rasmus Andersson
+   - Repository: https://github.com/rsms/inter
+   - License: SIL Open Font License, Version 1.1
+   - File: inter-latin-wght-normal.woff2 (Variable font, Latin subset, weights 100-900)
+
+3. Space Mono
+   - Typeface Designer: Colophon Foundry
+   - Repository: https://github.com/googlefonts/spacemono
+   - License: SIL Open Font License, Version 1.1
+   - Files:
+     - space-mono-latin-400-normal.woff2 (Regular weight 400)
+     - space-mono-latin-700-normal.woff2 (Bold weight 700)
+

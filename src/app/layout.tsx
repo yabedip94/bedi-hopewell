@@ -1,25 +1,35 @@
 import type { Metadata, Viewport } from 'next';
-import { Fraunces, Inter, Space_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import { BRAND_CONFIG } from '@/lib/brand';
 import '@/styles/globals.css';
 
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
+const fraunces = localFont({
+  src: '../../public/fonts/fraunces-latin-wght-normal.woff2',
   variable: '--font-display',
   display: 'swap',
+  weight: '100 900',
 });
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+const inter = localFont({
+  src: '../../public/fonts/inter-latin-wght-normal.woff2',
   variable: '--font-body',
   display: 'swap',
+  weight: '100 900',
 });
 
-const spaceMono = Space_Mono({
-  subsets: ['latin'],
-  weight: ['400', '700'],
+const spaceMono = localFont({
+  src: [
+    {
+      path: '../../public/fonts/space-mono-latin-400-normal.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/space-mono-latin-700-normal.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
   variable: '--font-mono',
   display: 'swap',
 });
@@ -57,4 +67,3 @@ export default function RootLayout({
     </html>
   );
 }
-
